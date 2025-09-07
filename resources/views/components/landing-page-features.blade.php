@@ -168,5 +168,66 @@
                 </div>
             </div>
         </div>
+
+        <!-- Sección Premium: Descarga de Presentación -->
+        <div class="mt-20 relative">
+            <div class="absolute bg-primary rounded-3xl blur opacity-20"></div>
+            <div class="relative bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-3xl p-12 text-center overflow-hidden">
+                <!-- Elementos decorativos de fondo -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/rhvddzym.json"
+                        trigger="loop"
+                        colors="primary:#FFFFFF"
+                        style="width:300px;height:300px;position:absolute;top:-50px;right:-50px;">
+                    </lord-icon>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/rhvddzym.json"
+                        trigger="loop"
+                        colors="primary:#FFFFFF"
+                        style="width:200px;height:200px;position:absolute;bottom:-30px;left:-30px;">
+                    </lord-icon>
+                </div>
+                
+                <div class="relative z-10">
+                    <!-- Badge de exclusividad -->
+                    <div class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full text-primary text-sm font-semibold mb-6">
+                        CONTENIDO EXCLUSIVO
+                    </div>
+                    
+                    <h3 class="text-4xl font-bold text-white mb-4">Presentación Ejecutiva ADVIS</h3>
+                    <p class="text-xl text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
+                        Descarga nuestra presentación completa y descubre cómo ADVIS puede transformar 
+                        la gestión de visitas en tu empresa. <strong>Disponible por tiempo limitado.</strong>
+                    </p>
+                    
+                    
+                    <!-- Botón de descarga premium -->
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-white rounded-2xl blur opacity-30"></div>
+                        <a href="{{ asset('presentacion/advis-caracteristicas.pdf') }}" download="ADVIS-Caracteristicas.pdf" class="relative inline-block bg-white text-primary px-12 py-4 rounded-2xl font-bold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/rhvddzym.json"
+                                trigger="hover"
+                                colors="primary:#0C1C7D"
+                                style="width:24px;height:24px;margin-right:12px;vertical-align:middle;">
+                            </lord-icon>
+                            DESCARGAR AHORA - GRATIS
+                        </a>
+                    </div>
+                    
+                    <!-- Aviso de urgencia -->
+                    <div class="mt-6 flex items-center justify-center text-white text-opacity-80">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/rhvddzym.json"
+                            trigger="hover"
+                            colors="primary:#FFFFFF"
+                            style="width:20px;height:20px;margin-right:8px;">
+                        </lord-icon>
+                        <span class="text-sm">Esta presentación estará disponible solo por tiempo limitado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
