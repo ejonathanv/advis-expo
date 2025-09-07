@@ -6,28 +6,12 @@
                 <img src="{{ asset('img/logo-advis.svg') }}" alt="Logo" width="120" height="40" />
             </div>
 
-            <!-- Navegación -->
-            <nav class="hidden md:block">
-                <ul class="flex items-center gap-6">
-                    <li>
-                        <a href="#funcionalidades" class="text-gray-600 hover:text-primary">Características</a>
-                    </li>
-                    <li>
-                        <a href="#beneficios" class="text-gray-600 hover:text-primary">Beneficios</a>
-                    </li>
-                    <li>
-                        <a href="#reportes" class="text-gray-600 hover:text-primary">Reportes</a>
-                    </li>
-                    <li>
-                        <a href="#precios" class="text-gray-600 hover:text-primary">Precios</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Botón de registro -->
-            <button class="bg-primary text-white px-6 py-2 rounded-md hover:bg-[var(--color-secondary)] transition-colors">
-                1 Mes Gratis
-            </button>
+            <!-- Slogan -->
+            <div class="hidden md:block">
+                <h2 class="text-gradient text-xl font-semibold">
+                    Control de accesos inteligente para empresas modernas
+                </h2>
+            </div>
         </div>
     </div>
 </header>

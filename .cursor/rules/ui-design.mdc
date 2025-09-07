@@ -1,0 +1,24 @@
+---
+description: Reglas para interfaz de usuario
+globs:
+alwaysApply: true
+---
+
+# Colores
+
+Estos son los colores que vamos a estar utilizando:
+
+Color primario: #0C1C7D
+Color secundario: #438ACC
+Color claro: #FFFFFF
+Color oscuro: #1E202F
+
+# Iconos
+
+Vamos a estar utilizando iconos de lordicon:
+
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+Aqui podemos encontrar la documentación para utilizar los iconos gratuitos en nuestra web:
+
+https://lordicon.com/docs/web

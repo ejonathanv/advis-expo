@@ -34,8 +34,8 @@
                 </div>
 
                 <!-- Mini Contador -->
-                <span class="mt-12font-semibold">La oferta termina en:</span>
-                <p class="mt-5 text-white/80 flex items-center gap-2 text-lg"
+                <span class="mt-12font-semibold text-xl">La oferta termina en:</span>
+                <p class="mt-5 text-white/80 flex items-center gap-2 text-xl"
                     x-data="{
                         targetDate: new Date('2025-11-01').getTime(),
                         now: new Date().getTime(),
@@ -79,23 +79,26 @@
                                 </span>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mt-2">
+                        <p class="text-gray-600 text-sm mt-2 font-bold">
                             Acceso completo a todas las funcionalidades
                         </p>
                     </div>
                 </div>
                 
-                <form id="registro-form" class="space-y-4" x-data="{ loading: false }" @submit.prevent="loading = true; setTimeout(() => loading = false, 2000)">
+                <form id="registro-form" class="space-y-4" action="{{ route('registration.store') }}" method="POST">
+                    @csrf
                     <div class="grid grid-cols-2 gap-4">
                         <input 
                             type="text" 
                             id="nombre-input"
+                            name="name"
                             placeholder="Nombre" 
                             class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-secondary)] focus:border-transparent" 
                             required
                         />
                         <input 
                             type="text" 
+                            name="lastname"
                             placeholder="Apellido" 
                             class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-secondary)] focus:border-transparent" 
                             required
@@ -104,18 +107,21 @@
                     
                     <input 
                         type="email" 
+                        name="email"
                         placeholder="Correo Electrónico" 
                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-secondary)] focus:border-transparent" 
                         required
                     />
                     <input 
                         type="tel" 
+                        name="phone"
                         placeholder="Teléfono" 
                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-secondary)] focus:border-transparent" 
                         required
                     />
                     <input 
                         type="text" 
+                        name="company"
                         placeholder="Nombre de la Empresa" 
                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-secondary)] focus:border-transparent" 
                         required
@@ -125,6 +131,8 @@
                         <input 
                             type="checkbox" 
                             id="terms" 
+                            name="terms"
+                            value="1"
                             class="rounded border-gray-300 text-[var(--color-primary)]" 
                             required
                         />
@@ -135,14 +143,9 @@
 
                     <button 
                         type="submit" 
-                        class="w-full bg-[var(--color-primary)] text-white py-3 rounded-lg hover:bg-[var(--color-secondary)] transition-colors relative"
-                        :class="{ 'opacity-75 cursor-wait': loading }"
-                        :disabled="loading"
+                        class="w-full bg-[var(--color-primary)] text-white py-3 rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
                     >
-                        <span x-show="!loading">Comenzar Prueba Gratuita</span>
-                        <span x-show="loading" class="absolute inset-0 flex items-center justify-center">
-                            Procesando...
-                        </span>
+                        Comenzar Prueba Gratuita
                     </button>
                 </form>
             </div>

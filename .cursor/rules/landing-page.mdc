@@ -1,0 +1,32 @@
+---
+description: Landing Page - Registro de ADVIS
+globs:
+alwaysApply: true
+---
+
+# Descripción del proyecto
+
+Este es un landing page que vamos a utilizar para que las personas se registren y puedan tener como oferta 1 mes de prueba de nuestro sistema ADVIS
+
+ADVIS es un sistema de gestión de visitas (Administrador de Visitas), tiene como funcionalidad facilitar el acceso de visitantes a traves de QR generados por el sistema.
+
+La idea es generar un landing page de tipo marketing para poder vender este sistema el cual es un SaaS de IP Media River.
+
+# Objetivo de ADIVS:
+
+Gestionar, administrar y controlar el acceso de personas. 
+Permite simplificar la gestión de los visitantes a las instalaciones de forma segura, ágil y eficiente mediante el uso de la tecnología, ayudando a mejorar la imagen y seguridad de la Empresa.
+
+# Funcionalidades
+
+● Control de visitantes vía citas generadas por los propios empleados
+● Control de visitas sin cita.
+● Alarmas al empleado de llegada de su cita, vía correo electrónico
+● Registro de unidad (auto) que entra a las instalaciones.
+● Historial de visitas.
+
+# Reportes
+
+● Almacena la información de todas las vistas, para su posterior explotación de información y toma de decisiones.
+
+● Puedes generar reporte de las visitas y descargarlo en formato PDF o Excel, de acuerdo a los estándares de C-TPAT.
