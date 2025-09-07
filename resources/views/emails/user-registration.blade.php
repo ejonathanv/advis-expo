@@ -32,6 +32,12 @@
             text-align: center;
         }
         
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
         .header h1 {
             color: var(--color-light);
             margin: 0;
@@ -177,12 +183,12 @@
             
             <div class="message">
                 ¡Gracias por registrarte en ADVIS! Estamos emocionados de tenerte como parte de nuestra comunidad. 
-                Tu sistema de gestión de visitas está listo para revolucionar la forma en que manejas el acceso a tu empresa.
+                Tu registro ha sido exitoso y pronto podrás disfrutar de todas las funcionalidades de nuestro sistema de gestión de visitas.
             </div>
             
             <div class="highlight-box">
-                <h2>🎉 ¡Tu Prueba Gratuita Está Activa!</h2>
-                <p>Acceso completo a todas las funcionalidades de ADVIS</p>
+                <h2>🎉 ¡Tu Mes Gratis Está Reservado!</h2>
+                <p>Para activar tu promoción, comunícate con nosotros o espera nuestro contacto</p>
             </div>
             
             <div class="features">
@@ -218,17 +224,13 @@
             </div>
             
             <div class="expiry-notice">
-                <h3>⏰ Importante: Fecha de Expiración</h3>
-                <p>Tu promoción de <strong>1 mes gratis</strong> expira el <strong>01 de Diciembre de 2025</strong></p>
-            </div>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="#" class="cta-button">Acceder a Mi Cuenta ADVIS</a>
+                <h3>⏰ Próximos Pasos</h3>
+                <p>Para activar tu <strong>1 mes gratis</strong>, puedes contactarnos directamente o esperar a que nuestro equipo se comunique contigo en las próximas 24-48 horas para completar la activación.</p>
             </div>
             
             <div class="message">
-                <p>Si tienes alguna pregunta o necesitas ayuda para configurar tu sistema, no dudes en contactarnos. 
-                Nuestro equipo de soporte está aquí para ayudarte.</p>
+                <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos. 
+                Nuestro equipo de soporte está aquí para ayudarte con la activación de tu cuenta.</p>
             </div>
         </div>
         
@@ -236,11 +238,6 @@
         <div class="footer">
             <p><strong>ADVIS</strong> - Sistema de Gestión de Visitas</p>
             <p>IP Media River</p>
-            <div class="social-links">
-                <a href="#">Soporte</a> |
-                <a href="#">Documentación</a> |
-                <a href="#">Contacto</a>
-            </div>
             <p style="margin-top: 20px; font-size: 12px;">
                 Este email fue enviado a {{ $userData['email'] }} porque te registraste en ADVIS.
             </p>

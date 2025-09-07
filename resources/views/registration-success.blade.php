@@ -123,30 +123,6 @@
                 </div>
             </div>
 
-            <!-- Support Section -->
-            <div class="mt-12 text-center">
-                <div class="bg-white rounded-xl shadow-lg p-8">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/ryhtmsoc.json"
-                        trigger="hover"
-                        colors="primary:#0C1C7D,secondary:#438ACC"
-                        style="width:60px;height:60px;margin:0 auto 20px;">
-                    </lord-icon>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">¿Necesitas Ayuda?</h3>
-                    <p class="text-gray-600 mb-6">
-                        Nuestro equipo de soporte está aquí para ayudarte a configurar y usar ADVIS
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="mailto:soporte@advis.com" class="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors">
-                            📧 soporte@advis.com
-                        </a>
-                        <a href="tel:+1234567890" class="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors">
-                            📞 +1 (234) 567-890
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
