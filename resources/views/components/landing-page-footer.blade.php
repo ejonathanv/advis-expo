@@ -60,7 +60,7 @@
 
         <!-- Derechos Reservados -->
         <div class="py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-            <p>© {new Date().getFullYear()} ADVIS. Todos los derechos reservados.</p>
+            <p>© {{ date('Y') }} ADVIS. Todos los derechos reservados.</p>
             <div class="flex items-center gap-6">
                 <a href="#" class="hover:text-white transition-colors">Términos</a>
                 <a href="#" class="hover:text-white transition-colors">Privacidad</a>
