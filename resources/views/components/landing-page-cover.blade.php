@@ -34,33 +34,55 @@
                 </div>
 
                 <!-- Mini Contador -->
-                <span class="mt-12font-semibold text-xl">La oferta termina en:</span>
-                <p class="mt-5 text-white/80 flex items-center gap-2 text-xl"
-                    x-data="{
-                        targetDate: new Date('2025-11-01').getTime(),
-                        now: new Date().getTime(),
-                        days: '00',
-                        hours: '00',
-                        minutes: '00',
-                        seconds: '00',
-                        updateCounter() {
-                            const now = new Date().getTime();
-                            const distance = this.targetDate - now;
-                            if (distance > 0) {
-                                this.days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-                                this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
-                                this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
-                                this.seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
-                            }
-                        }
-                    }"
-                    x-init="updateCounter(); setInterval(() => updateCounter(), 1000)"
-                >
-                    <span class="font-semibold text-[#FFD700]" x-text="days">00</span>d
-                    <span class="font-semibold text-[#FFD700]" x-text="hours">00</span>h
-                    <span class="font-semibold text-[#FFD700]" x-text="minutes">00</span>m
-                    <span class="font-semibold text-[#FFD700]" x-text="seconds">00</span>s
-                </p>
+                <span class="mt-12 font-semibold text-xl">La oferta termina en:</span>
+                
+                <!-- Contador Premium -->
+                <div class="mt-6 relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#FFD700] to-[#FFA500] rounded-2xl blur opacity-30"></div>
+                    <div class="relative bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-2xl p-6 shadow-2xl">
+                        <div class="flex items-center justify-center gap-4 text-2xl font-bold"
+                            x-data="{
+                                targetDate: new Date('2025-11-01').getTime(),
+                                now: new Date().getTime(),
+                                days: '00',
+                                hours: '00',
+                                minutes: '00',
+                                seconds: '00',
+                                updateCounter() {
+                                    const now = new Date().getTime();
+                                    const distance = this.targetDate - now;
+                                    if (distance > 0) {
+                                        this.days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+                                        this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+                                        this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+                                        this.seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+                                    }
+                                }
+                            }"
+                            x-init="updateCounter(); setInterval(() => updateCounter(), 1000)"
+                        >
+                            <div class="flex flex-col items-center">
+                                <span class="text-primary text-4xl font-black" x-text="days">00</span>
+                                <span class="text-primary text-sm font-semibold">DÍAS</span>
+                            </div>
+                            <span class="text-primary text-2xl">:</span>
+                            <div class="flex flex-col items-center">
+                                <span class="text-primary text-4xl font-black" x-text="hours">00</span>
+                                <span class="text-primary text-sm font-semibold">HRS</span>
+                            </div>
+                            <span class="text-primary text-2xl">:</span>
+                            <div class="flex flex-col items-center">
+                                <span class="text-primary text-4xl font-black" x-text="minutes">00</span>
+                                <span class="text-primary text-sm font-semibold">MIN</span>
+                            </div>
+                            <span class="text-primary text-2xl">:</span>
+                            <div class="flex flex-col items-center">
+                                <span class="text-primary text-4xl font-black" x-text="seconds">00</span>
+                                <span class="text-primary text-sm font-semibold">SEG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Formulario -->

@@ -204,8 +204,7 @@
                     
                     <!-- Botón de descarga premium -->
                     <div class="relative">
-                        <div class="absolute -inset-1 bg-white rounded-2xl blur opacity-30"></div>
-                        <a href="{{ asset('presentacion/advis-caracteristicas.pdf') }}" download="ADVIS-Caracteristicas.pdf" class="relative inline-block bg-white text-primary px-12 py-4 rounded-2xl font-bold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                        <a href="{{ asset('presentacion/advis-caracteristicas.pdf') }}" download="ADVIS-Caracteristicas.pdf" class="relative inline-block bg-gradient-to-br from-[#FFD700] to-[#FFA500] text-primary px-12 py-4 rounded-2xl font-bold text-lg hover:from-[#FFA500] hover:to-[#FFD700] transition-all duration-300 transform hover:scale-105 shadow-2xl">
                             <lord-icon
                                 src="https://cdn.lordicon.com/rhvddzym.json"
                                 trigger="hover"
