@@ -216,13 +216,7 @@
                     </div>
                     
                     <!-- Aviso de urgencia -->
-                    <div class="mt-6 flex items-center justify-center text-white text-opacity-80">
-                        <lord-icon
-                            src="https://cdn.lordicon.com/rhvddzym.json"
-                            trigger="hover"
-                            colors="primary:#FFFFFF"
-                            style="width:20px;height:20px;margin-right:8px;">
-                        </lord-icon>
+                    <div class="mt-6 flex items-center justify-center text-white text-opacity-75">
                         <span class="text-sm">Esta presentación estará disponible solo por tiempo limitado</span>
                     </div>
                 </div>
